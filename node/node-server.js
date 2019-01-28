@@ -96,7 +96,7 @@ const server = http.createServer((req, res) => {
     }
 });
 
-server.listen(80);
+server.listen(8090, '43.226.152.1');
 
 console.log('success');
 
