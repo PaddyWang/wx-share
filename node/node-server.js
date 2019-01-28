@@ -95,10 +95,13 @@ const server = http.createServer((req, res) => {
         });
     }
 });
+let port = 8090;
+let host = '127.0.0.1';
+server.listen(port, host, () => {
+    console.log('Success::', host, port);
+});
 
-server.listen(8090, '43.226.152.1');
-
-console.log('success');
+console.log('>>>');
 
 function getToken(){
     let url = `https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&appid=${appid}&secret=${secret}`;
