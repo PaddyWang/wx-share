@@ -96,7 +96,7 @@ const server = http.createServer((req, res) => {
     }
 });
 let port = 8090;
-let host = '127.0.0.1';
+let host = '0.0.0.0';
 server.listen(port, host, () => {
     console.log('Success::', host, port);
 });
